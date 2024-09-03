@@ -10,7 +10,6 @@ const callOpenAI = async (
 ) => {
   return openAI.chat.completions.create({
     model: "gpt-4o",
-    response_format: { type: "json_object" },
     messages,
     temperature: 0,
   });
